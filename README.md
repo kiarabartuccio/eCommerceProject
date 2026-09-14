@@ -4,6 +4,19 @@ A full-stack pet adoption platform built with PHP and the Slim Framework. PetCon
 
 ---
 
+## Quick Start
+
+PetConnect requires **PHP 8.1+**, **Composer**, and **MySQL/MariaDB**.
+
+1. Download and extract the repository.
+2. Create an empty MySQL database named `petconnect`.
+3. Launch the setup:
+   - **Windows:** double-click `run.bat`
+   - **macOS/Linux:** run `chmod +x run.sh && ./run.sh`
+4. The first run creates `PetConnect/.env`. Add your local database settings and a `SEED_TOKEN`, then run the launcher again.
+5. Visit `http://localhost:8000/seed?token=YOUR_SEED_TOKEN` once to create sample data.
+6. Open `http://localhost:8000`.
+
 ## Features
 
 - **Pet Listings** — Browse, filter, and search adoptable pets by species, age, and availability
@@ -124,7 +137,7 @@ PetConnect/
 
    This auto-creates all tables (RedBeanPHP handles schema) and inserts sample pets, categories, and a default admin user.
 
-   > **Default admin credentials:** `admin@petconnect.ca` / `admin1234`
+   > The seed route creates a local demonstration administrator. Review the seed configuration before using it.
 
 5. **Open the app**
 
