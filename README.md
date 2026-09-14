@@ -2,20 +2,28 @@
 
 A full-stack pet adoption platform built with PHP and the Slim Framework. PetConnect lets users browse adoptable pets, submit adoption requests, and chat with an AI assistant, while giving administrators a complete dashboard to manage pets, users, and the full adoption workflow.
 
+## Application Preview
+
+![PetConnect home page running locally with Wampoon](docs/screenshots/petconnect-home.png)
+
+> PetConnect is run locally using **Wampoon**, which provides the Apache, PHP, and MySQL/MariaDB environment required by the project.
+
 ---
 
 ## Quick Start
 
-PetConnect requires **PHP 8.1+**, **Composer**, and **MySQL/MariaDB**.
+PetConnect requires **Wampoon**, **PHP 8.1+**, **Composer**, and **MySQL/MariaDB**.
 
-1. Download and extract the repository.
-2. Create an empty MySQL database named `petconnect`.
-3. Launch the setup:
-   - **Windows:** double-click `run.bat`
-   - **macOS/Linux:** run `chmod +x run.sh && ./run.sh`
-4. The first run creates `PetConnect/.env`. Add your local database settings and a `SEED_TOKEN`, then run the launcher again.
-5. Visit `http://localhost:8000/seed?token=YOUR_SEED_TOKEN` once to create sample data.
-6. Open `http://localhost:8000`.
+1. Install and open Wampoon.
+2. Download or clone this repository into Wampoon's web-project directory.
+3. Make sure the Apache and MySQL/MariaDB services are running in Wampoon.
+4. Create an empty MySQL database named `petconnect`.
+5. Open a terminal in the `PetConnect` folder and run `composer install`.
+6. Copy `.env.example` to `.env`, then add your local database settings and required API configuration.
+7. Open `http://localhost/eCommerceProject/PetConnect/` in your browser.
+8. Run the seed route once if sample data is required.
+
+The included `run.bat` and `run.sh` launchers can also be used after the local environment is configured.
 
 ## Features
 
