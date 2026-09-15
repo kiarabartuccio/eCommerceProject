@@ -12,6 +12,8 @@ A full-stack pet adoption platform built with PHP and the Slim Framework. PetCon
 
 ## Quick Start
 
+HOW I RUN: OPEN WAPOON, RUN IT, OPEN LOCAL HOST, SELECT ecommerceProject, RUNS
+
 PetConnect requires **Wampoon**, **PHP 8.1+**, **Composer**, and **MySQL/MariaDB**.
 
 1. Install and open Wampoon.
